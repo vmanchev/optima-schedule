@@ -68,28 +68,6 @@ const timeSlot = new TimeSlot(startTime, endTime, sector, [description, [params,
 - **params** - Optional, any params you might need to pass over.
 - **id** - Optional, slot id, if you have assigned one.
 
-## Demo
-
-1. Clone the project and install its dependencies
-
-```
-git clone https://github.com/vmanchev/optima-schedule.git
-cd optima-schedule
-npm install
-```
-
-2. Run the application
-
-```
-ng serve
-```
-
-3. Open your browser and navigate to `http://localhost:4200`
-
-4. Play with it - change the data from src/app/app.component.ts file.
-
-Screenshots can be found in the github repo.
-
 ## Features
 
 - multiple sectors (e.g. all doctors in the clinic);
