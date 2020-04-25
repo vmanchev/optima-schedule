@@ -1,10 +1,10 @@
-# Optima Schedule component
+# Optima Schedule
 
 Angular scheduler module, rendering time slots for appointments.
 
-|                          Desktop layout                          |                          Mobile layout                          |
-| :--------------------------------------------------------------: | :-------------------------------------------------------------: |
-| ![Desktop](projects/optima-schedule/docs/optima-schedule-sm.png) | ![Mobile](projects/optima-schedule/docs/optima-schedule-xs.png) |
+|             Desktop layout              |             Mobile layout              |
+| :-------------------------------------: | :------------------------------------: |
+| ![Desktop](docs/optima-schedule-sm.png) | ![Mobile](docs/optima-schedule-xs.png) |
 
 ## Install
 

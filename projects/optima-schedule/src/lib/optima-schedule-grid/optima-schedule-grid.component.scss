@@ -1,0 +1,74 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+.optima-schedule-grid {
+  &__time {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+
+    > li {
+      padding: 10px 15px;
+      border: 1px solid #c2c2c2;
+      border-bottom: none;
+    }
+
+    &--last {
+      border-bottom: 1px solid #c2c2c2 !important;
+    }
+  }
+  &__sectors {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 6;
+
+    @media screen and (min-width: 575px) {
+      flex: 1 0 80%;
+    }
+  }
+  &__sector {
+    flex: 1 2 80%;
+    overflow: hidden;
+    position: relative;
+  }
+  &__slot {
+    flex: 1;
+    padding: 10px 15px;
+    border-top: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+
+    &--last {
+      border-bottom: 1px solid #c2c2c2;
+    }
+
+    &:hover {
+      background-color: #cccae6;
+    }
+  }
+  &__appointment {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    > div {
+      background: #c6c6c6;
+      line-height: 2.5em;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 3px;
+      height: calc(100% - 5px);
+
+      &:hover {
+        background-color: #b7b5cf;
+      }
+    }
+  }
+
+  &__drag {
+    background-color: #b7b5cf;
+    border-top-color: #b7b5cf;
+  }
+}

@@ -1,0 +1,37 @@
+<ul class="optima-schedule-grid__time">
+  <li
+    *ngFor="let slotInterval of slotIntervals; let lastSlot = last"
+    [ngClass]="{ 'optima-schedule-grid__time--last': lastSlot }"
+  >
+    {{ slotInterval.start | date: "HH:mm" }}
+  </li>
+</ul>
+<div class="optima-schedule-grid__sectors">
+  <div class="optima-schedule-grid__sector" *ngFor="let sector of sectors">
+    <div
+      class="optima-schedule-grid__slot"
+      [attr.data-slot-index]="slotIndex"
+      [attr.data-sector]="sector"
+      *ngFor="
+        let slotInterval of slotIntervals;
+        let last = last;
+        let slotIndex = index
+      "
+      [ngClass]="{ 'optima-schedule-grid__slot--last': last }"
+      (click)="selectTimeslot(null, slotInterval, sector)"
+    >
+      &nbsp;
+    </div>
+    <div
+      class="optima-schedule-grid__appointment"
+      *ngFor="let reservedSlot of getReservedSlotsPerSector(sector)"
+      (click)="selectTimeslot(reservedSlot)"
+      [style.top.%]="getRelativeStyle(reservedSlot).top"
+      [style.height.%]="getRelativeStyle(reservedSlot).height"
+    >
+      <div>
+        {{ reservedSlot.description }}
+      </div>
+    </div>
+  </div>
+</div>
