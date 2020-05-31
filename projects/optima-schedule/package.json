@@ -1,7 +1,16 @@
 {
   "name": "optima-schedule",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Angular scheduler module, rendering time slots for appointments.",
+  "homepage": "https://github.com/vmanchev/optima-schedule/tree/master/projects/optima-schedule",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmanchev/optima-schedule"
+  },
+  "author": {
+    "name": "Venelin Manchev",
+    "email": "manchev@optima.vet"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
