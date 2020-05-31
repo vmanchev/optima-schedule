@@ -1,0 +1,33 @@
+{
+  "name": "optima-schedule-material",
+  "version": "0.0.1",
+  "description": "Angular Material scheduler module, rendering time slots for appointments.",
+  "homepage": "https://github.com/vmanchev/optima-schedule/tree/master/projects/optima-schedule-material",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmanchev/optima-schedule"
+  },
+  "author": {
+    "name": "Venelin Manchev",
+    "email": "manchev@optima.vet"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "tslib": "^1.10.0"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "scheduler",
+    "schedule",
+    "calendar",
+    "time slot",
+    "appointment",
+    "appointments"
+  ],
+  "dependencies": {
+    "@angular/material": "^9.2.4"
+  }
+}

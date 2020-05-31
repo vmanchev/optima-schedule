@@ -1,0 +1,13 @@
+<optima-schedule-header
+  [sectors]="sectors"
+  (txSelectedSector)="txDisplaySector($event)"
+></optima-schedule-header>
+<optima-schedule-grid
+  [slotIntervals]="slotIntervals"
+  [sectors]="getSectors()"
+  [reservedSlots]="reservedSlots"
+  [startTime]="startTime"
+  [endTime]="endTime"
+  (cellSelected)="selectTimeslot($event)"
+>
+</optima-schedule-grid>
